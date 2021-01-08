@@ -16,14 +16,14 @@ def sameplayerplayagain() :
     label = Label(fenetre, text="Surement une oeuvre d'art de picasso !")
     label.pack()
     canvas=Canvas()
-    for i in range(100000) :
+    for i in range(10000) :
         canvas.create_line(random.randint(0,500),random.randint(0,500),random.randint(0,500),random.randint(0,500), fill=coul_alea())
         canvas.pack()
     Bouton_jaime = Button(fenetre, text="J'aime", command=sameplayerplayagain)
     Bouton_jaime.pack()
     Bouton_sortie = Button(fenetre, text="pas cool mec", command=windows_close)
     Bouton_sortie.pack()
-    position = "400x400+" + str(random.randint(100,1200)) + "+" + str(random.randint(100,700))
+    position = "400x400+" + str(random.randint(100,1200)) + "+" + str(random.randint(-300,700))
     fenetre.geometry(position)
     fenetre.mainloop()
 
