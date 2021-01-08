@@ -16,7 +16,7 @@ def sameplayerplayagain() :
     label = Label(fenetre, text="Surement une oeuvre d'art de picasso !")
     label.pack()
     canvas=Canvas()
-    for i in range(1000000) :
+    for i in range(100000) :
         canvas.create_line(random.randint(0,500),random.randint(0,500),random.randint(0,500),random.randint(0,500), fill=coul_alea())
         canvas.pack()
     Bouton_jaime = Button(fenetre, text="J'aime", command=sameplayerplayagain)
