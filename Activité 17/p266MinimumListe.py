@@ -25,7 +25,10 @@ Il affiche "FileNotFoundError: [Errno 2] No such file or directory: 'test.txt'".
 Python nous indique ici qu'il ne trouve pas le fichier souhaiter.
 """
 
-try :
-    f=open("test.txt","r")
-except :
-    print("Python ne parvient pas à localiser le fichier")
+def OuvertureFichierLecture():
+    try :
+        f=open("test.txt","r")
+    except FileNotFoundError :
+        print("Python ne parvient pas à localiser le fichier demander")
+
+print(OuvertureFichierLecture())
